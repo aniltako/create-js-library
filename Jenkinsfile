@@ -2,24 +2,32 @@ pipeline {
     agent any
     tools {nodejs "nodejs"}
     stages {
-        stage('React Jenkinsfile') {
+        stage('Install react Dependencies') {
             steps {
-                sh 'cd react'
+                dir ('react') {
+                    sh 'npm install'
+                }
             }
         }
-        stage('Install Dependencies') {
+        stage('Test react') {
             steps {
-                sh 'npm install'
+                dir ('react') {
+                    sh 'npm run test'
+                }
             }
         }
-        stage('Test') {
+        stage('Install vanillaJs Dependencies') {
             steps {
-                sh 'npm run test'
+                dir ('vanillaJs') {
+                    sh 'npm install'
+                }
             }
         }
-        stage('Build') {
+        stage('Test vanillaJs') {
             steps {
-                sh 'npm run build'
+                dir ('vanillaJs') {
+                    sh 'npm run test'
+                }
             }
         }
     }
