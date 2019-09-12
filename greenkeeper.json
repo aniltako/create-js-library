@@ -1,10 +1,18 @@
 {
   "groups": {
-    "default": {
+    "react": {
       "packages": [
-        "package.json",
-        "react/package.json",
+        "react/package.json"
+      ]
+    },
+    "vanillaJs": {
+      "packages": [
         "vanillaJs/package.json"
+      ]
+    },
+    "main": {
+      "packages":[
+        "package.json"
       ]
     }
   }
