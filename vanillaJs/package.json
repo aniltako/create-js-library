@@ -30,7 +30,7 @@
     "semantic-release": "^15.13.24",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6",
-    "webpack-dev-server": "^3.7.2",
+    "webpack-dev-server": "^3.10.0",
     "webpack-merge": "^4.2.1"
   },
   "config": {
