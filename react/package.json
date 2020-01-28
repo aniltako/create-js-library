@@ -51,7 +51,7 @@
     "prop-types": "^15.7.2",
     "react-hot-loader": "^4.12.9",
     "react-test-renderer": "^16.8.6",
-    "rimraf": "^3.0.0",
+    "rimraf": "^3.0.1",
     "sass-loader": "^8.0.0",
     "semantic-release": "^15.13.24",
     "style-loader": "^1.0.0",
